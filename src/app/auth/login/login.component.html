@@ -1,12 +1,17 @@
-<div class="login-form">
+<div class="login-form" >
     <h1>BBBoot</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-group "> 
-        <input type="text" class="form-control" placeholder="Username " id="UserName"> 
+        <input type="text" class="form-control"   formControlName="username"   placeholder="Username " id="UserName"> 
         <i class="mdi mdi-account"></i> 
     </div>
     <div class="form-group log-status"> 
-        <input type="password" class="form-control" placeholder="Password" id="Passwod"> 
+        <input type="password" class="form-control"   formControlName="password"  placeholder="Password" id="Passwod"> 
         <i class="mdi mdi-lock"></i> 
     </div> 
-    <span class="alert">Invalid Credentials</span> <a class="link" href="#">Lost your password?</a> <button type="button" class="log-btn"><i class="mdi mdi-account"></i> Log in</button>
+    <span class="alert">Invalid Credentials</span> <a class="link" href="#">Lost your password?</a> <button type="submit" class="log-btn" >
+        <i class="mdi mdi-account"></i> 
+        Log in
+    </button>
+</form>
 </div>
