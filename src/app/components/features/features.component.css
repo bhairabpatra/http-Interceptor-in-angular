@@ -1,0 +1,12 @@
+ .card-box{
+     border: 2px solid rgb(214, 214, 214);
+     padding: 10px;
+     border-radius: 5px;
+     background-color: rgb(240, 239, 239);
+ }
+ .pagi{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 25px 0px;
+ }

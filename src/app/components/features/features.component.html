@@ -1,0 +1,27 @@
+<div class="box mt-5">
+    <div class="row">
+        <div class="col-md-3"      *ngFor="let item of passenger | paginate
+        : {
+            itemsPerPage: itemsPerPage,
+            currentPage: page,
+            totalItems: totalItems
+          }
+  ">
+  <div class="card-box m-4 text-center">
+  <span>{{ item.name }}</span> <br />
+  <span>{{ item.trips }}</span> <br />
+  <span>{{ item.airline.name  }}</span> <br />
+  <img src="{{ item.airline.logo }}" alt="" /> <br />
+  <span>{{ item.airline.slogan }}</span> <br />
+  </div>
+        </div>
+    </div>
+  
+ 
+       
+  
+  </div>
+  <pagination-controls
+    class="pagi dflex"
+    (pageChange)="gty((page = $event))"
+  ></pagination-controls>
