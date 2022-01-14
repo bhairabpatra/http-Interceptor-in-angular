@@ -16,16 +16,7 @@ const routes: Routes = [
   { path: "features", component: FeaturesComponent },
   { path: "aboutus", component: AboutUsComponent },
   { path: "contact", component: ContactUsComponent },
-  // {
-  //   path: "",
-  //   component: SidebarComponent,
-  //   outlet: "sidebar"
-  // },
-  // {
-  //   path: "products",
-  //   component: ProductListSidebarComponent,
-  //   outlet: "sidebar"
-  // }
+  
 ];
 
 @NgModule({
