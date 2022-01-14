@@ -15,7 +15,7 @@ h1 {
 .login-form {
     width: 350px;
     padding: 40px 30px;
-    background: #eee;
+    
     margin: auto;
     border: 1px solid #fff;
    margin-top: 50px;
@@ -33,7 +33,7 @@ h1 {
     border: none;
     padding: 5px 7px 5px 15px;
     background: #fff;
-    color: #666;
+    
     border: 2px solid #ddd
 }
 
@@ -41,7 +41,7 @@ h1 {
     position: absolute;
     right: 15px;
     top: 17px;
-    color: #999
+   
 }
 
 .mdi {
@@ -50,7 +50,7 @@ h1 {
 }
 
 .form-control:focus {
-    color: #fff !important;
+  
     background-color: #fff;
     border-color: #fff !important;
     outline: none;
