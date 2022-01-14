@@ -16,6 +16,9 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { LoginComponent } from './auth/login/login.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import {  ReactiveFormsModule }  from '@angular/forms';
+import { LoaderInterceptorService } from './interceptors/loader-interceptor.service';
+import { LoaderService } from './service/loader.service';
+import { LoaderComponent } from './components/loader/loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,8 @@ import {  ReactiveFormsModule }  from '@angular/forms';
     FeaturesComponent,
     AboutUsComponent,
     ContactUsComponent,
-    LoginComponent
+    LoginComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,11 @@ import {  ReactiveFormsModule }  from '@angular/forms';
     ReactiveFormsModule
      
   ],
-  providers: [AuthService],
-  bootstrap: [AppComponent]
+  providers: [AuthService ,
+              LoaderService,
+    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptorService, multi: true }
+  ],
+  bootstrap: [AppComponent
+  ]
 })
 export class AppModule { }

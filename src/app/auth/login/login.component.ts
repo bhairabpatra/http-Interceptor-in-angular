@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
       console.log("form value" +  this.form.value)
       this.authService.authentication(this.form.value).subscribe((data)=>{
            console.log("Login result" + data)
+           localStorage.setItem("token" , "d")
            this.authService.loggedIn.next(true)
 
            this.router.navigate(['/products']);

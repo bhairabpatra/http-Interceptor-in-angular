@@ -9,7 +9,7 @@ export class FeaturesComponent implements OnInit {
 
   page: number = 1;
   passenger:any;
-  itemsPerPage = 12;
+  itemsPerPage = 9;
   totalItems : any =[]
 
   constructor(private http: HttpClient) { }

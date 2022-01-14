@@ -5,7 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 ## https://fakestoreapi.com/docs
 ## https://blog.logrocket.com/server-side-pagination-in-angular-with-ngx-pagination/
-
+## https://www.freakyjolly.com/http-global-loader-progress-bar-using-angular-interceptors/
+## https://firstclassjs.com/display-a-loader-on-every-http-request-using-interceptor-in-angular-7/
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
